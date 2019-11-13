@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -9,36 +10,53 @@ public class Main {
 
 
     public static void main(String[] args) {
+
+        int[] myNumbers = {5,7,2,9,4};
+        System.out.println(Arrays.toString(myNumbers));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         //The below commented code is the first look at arrays, the code above it is a real world use
-        int[] myIntegers = getIntegers(5);
-
-        for (int i = 0; i<myIntegers.length; i++) {
-            System.out.println("Element " + i + ", values are " + myIntegers[i]);
-        }
-
-        System.out.println("The average is " + getAverage(myIntegers));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//        int[] myIntegers = getIntegers(5);
+//
+//        for (int i = 0; i<myIntegers.length; i++) {
+//            System.out.println("Element " + i + ", values are " + myIntegers[i]);
+//        }
+//
+//        System.out.println("The average is " + getAverage(myIntegers));
 
 
 
@@ -82,12 +100,6 @@ public class Main {
         total = total / array.length;
         return total;
     }
-
-
-
-
-
-
 
 
 

@@ -15,7 +15,8 @@ public class Main {
 
     }
 
-    public static int[] getIntegers(int number) {
+
+        public static int[] getIntegers(int number) {
         System.out.println("Enter " + number + " interger values. \r");
         int[] values = new int[number];
         for (int i = 0; i<values.length; i++) {
@@ -25,11 +26,51 @@ public class Main {
         return values;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public static int[] sortIntegers(int[] array) {
         int[] sortedArray = new int[array.length];
         for (int k = 0; k < array.length; k++) {
             sortedArray[k] = array[k];
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     //These two chunks of code do the same thing, but one is manual and the second is automatic
     //  #1
@@ -40,6 +81,26 @@ public class Main {
 
     //  #2
           //int[] sortedArray = Arrays.copyOf(array, array.length);       //copyOf()   has many different options so choose the one that matches the array datatype.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -59,6 +120,22 @@ public class Main {
         }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //        for (int i = 0; i < array.length; i++) {
 //            sortedArray[i] = array[i];
 //            for (int j = 0; j < array.length; j++) {
@@ -70,6 +147,23 @@ public class Main {
 //                }
 //            }
 //        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         return sortedArray;
     }
 
@@ -102,6 +196,17 @@ public class Main {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
