@@ -41,12 +41,12 @@ public class Array {
 
 //Methods
     public void printArray() {                                       // To print an array.
-        System.out.println(Arrays.toString(numbers));
+        System.out.println(Arrays.toString(numbers) + "\n");
     }
 
     public void fillArray() {                                        // Use to fill any size array with user inputs.
+        System.out.println("What number do you want to add? ");
         for (int i = 0; i < numbers.length; i++) {
-            System.out.println("What number do you want to add? ");
             int number = scanner.nextInt();
             numbers[i] = number;
         }
@@ -66,7 +66,7 @@ public class Array {
     public void ascendingOrderToNewArray() {                       // This prints a version of the array with all numbers in ascending order.
         int[] newArray = copyArray();
         Arrays.sort(newArray);
-        System.out.println(Arrays.toString(newArray));
+        System.out.println(Arrays.toString(newArray) + "\n");
     }
 
     public void descendingOrderToNewArray() {                      // This prints a version of the array with all numbers in descending order.
@@ -88,7 +88,8 @@ public class Array {
 
             }
         }
-        System.out.println(Arrays.toString(orderedArray));
+        System.out.println(Arrays.toString(orderedArray) + "\n");
+
     }
 
     public double getAverage() {                                   // Takes all the numbers and finds an average between them.
