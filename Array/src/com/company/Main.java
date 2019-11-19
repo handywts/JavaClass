@@ -5,16 +5,52 @@ import java.util.Scanner;
 
 public class Main {
 
+    /*
+    Create a new project
+    Create a class
+    Make the class so that it does all the work.
+    The array will be 10 digits long.
+
+     */
+
+
+
+
+
+
+
+
 
     private static Scanner scanner = new Scanner(System.in);
 
 
     public static void main(String[] args) {
 
-        int[] myNumbers = {5,7,2,9,4};
-        System.out.println(Arrays.toString(myNumbers));
+        //Creating an Array
+        int[] myInts = new int [5] ;
+        int[] yourInts = new int[] {5,4,3,2,1};
 
+        //Print an array
+        System.out.println(Arrays.toString(myInts));
 
+        //Print one element
+        System.out.println(      yourInts[4]     );
+        //Print all elements
+        for(int i = 0; i < 5; i++) {
+            System.out.println(     yourInts[i]    );
+        }
+
+        //Sort an array
+        Arrays.sort(yourInts);
+        System.out.println(Arrays.toString(yourInts));
+
+        //Flipping an array
+        for (int left = 0, right = yourInts.length-1; left < right; left++, right--) {
+            int temp = yourInts[left];
+            yourInts[left] = yourInts[right];
+            yourInts[right] = temp;
+        }
+        System.out.println(Arrays.toString(yourInts));
 
 
 
