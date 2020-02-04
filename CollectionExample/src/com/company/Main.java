@@ -8,19 +8,51 @@ import java.util.Stack;
 public class Main {
 
     public static void main(String[] args) {
-        CollectionExampleLists example = new CollectionExampleLists();
 
-        Scanner input = new Scanner(System.in);
 
-        boolean quit = false;
 
-        while(quit != true) {
-            System.out.println("What number do you want to enter (-1 to quit)");
-            int num = input.nextInt();
-            if(num == -1) {
-                break;
-            }
-        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        CollectionExampleLists example = new CollectionExampleLists();
+//
+//        Scanner input = new Scanner(System.in);
+//
+//        boolean quit = false;
+//
+//        while(quit != true) {
+//            System.out.println("What number do you want to enter (-1 to quit)");
+//            int num = input.nextInt();
+//            if(num == -1) {
+//                break;
+//            }
+//        }
+
+        //Switch
 
     }
 
