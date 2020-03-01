@@ -5,6 +5,8 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.DatePicker?>
+
+
 <DialogPane fx:controller="com.soeland.todolist.DialogController"
             xmlns:fx="http://javafx.com/fxml">
 
@@ -17,7 +19,8 @@
             <Label text="Short Description: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
             <TextField fx:id="shortDescriptionField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
             <Label text="Details: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
-            <TextArea fx:id="detailsArea" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <TextArea fx:id="detailsArea" GridPane.rowIndex="1" GridPane.columnIndex="1"
+             wrapText="true"/>
             <Label text="Deadline: " GridPane.rowIndex="2" GridPane.columnIndex="0"/>
             <DatePicker fx:id="deadlinePicker" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
         </GridPane>

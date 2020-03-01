@@ -5,5 +5,7 @@ Pickup Doug at the train station	Doug's arriving on the 5:00 train	10-01-2020
 Pick up dry cleaning	The clothes should be ready by Wednesday	20-04-2020
 My new Todo Item	This is a new todo item	21-01-2020
 Dan	Test details	20-01-2020
-new item	yes you can interupt me	22-01-2020
-another test	dddddddddd	02-02-2020
+color test	within a day should be red	09-02-2020
+first problem	top of list	01-01-2020
+jlkhkjhkhk	;okkjkj	25-02-2020
+kkkkkkkk	lkkkkkkkkkkk	22-02-2020

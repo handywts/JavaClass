@@ -5,6 +5,8 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.DatePicker?>
+
+
 <DialogPane fx:controller="com.soeland.todolist.DialogController"
             xmlns:fx="http://javafx.com/fxml">
 
