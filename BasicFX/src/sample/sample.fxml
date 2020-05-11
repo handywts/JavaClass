@@ -1,75 +1,81 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.FlowPane?>
-<?import javafx.scene.control.ChoiceBox?>
-<?import javafx.collections.FXCollections?>
-<?import java.lang.String?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.layout.VBox?>
-<BorderPane
-        fx:id="mainPane"
-        fx:controller="sample.Controller"
-        xmlns:fx="http://javafx.com/fxml">
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<BorderPane fx:id="mainPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="sample.Controller">
     <padding>
-        <Insets right="0" top="20" left="20" bottom="20"/>
+        <Insets bottom="20" left="20" right="0" top="20" />
     </padding>
     <top>
-        <FlowPane fx:id="fruits" hgap="100">
-            <Label fx:id="choice" text="Your choice will show here." />
-            <Label text="Fruits"/>
+        <Label fx:id="choice" text="Your choice will show here." />
+    </top>
+    <left>
+        <FlowPane fx:id="fruits" hgap="100" prefHeight="417.0" prefWidth="226.0">
+            <Label text="Fruits" />
             <ChoiceBox fx:id="fruitBox" onAction="#handleChoice">
                 <items>
                     <FXCollections fx:factory="observableArrayList">
-                        <String fx:value="Apple"/>
-                        <String fx:value="Apricot"/>
-                        <String fx:value="Banana"/>
-                        <String fx:value="Cherry"/>
-                        <String fx:value="Date"/>
-                        <String fx:value="Kiwi"/>
-                        <String fx:value="Orange"/>
-                        <String fx:value="Pear"/>
-                        <String fx:value="Strawberry"/>
+                        <String fx:value="Apple" />
+                        <String fx:value="Apricot" />
+                        <String fx:value="Banana" />
+                        <String fx:value="Cherry" />
+                        <String fx:value="Date" />
+                        <String fx:value="Kiwi" />
+                        <String fx:value="Orange" />
+                        <String fx:value="Pear" />
+                        <String fx:value="Strawberry" />
                     </FXCollections>
                 </items>
             </ChoiceBox>
         </FlowPane>
-    </top>
+    </left>
     <center>
-        <FlowPane fx:id="veggies" hgap="100">
-            <Label text="Vegetables"/>
-            <ListView>
+
+        <FlowPane fx:id="veggies">
+            <Label text="Vegetables" />
+            <ListView fx:id="veggieList" onMouseClicked="#handleChoice">
+                <!--
+                <tooltip>
+                    <Tooltip text="Takes two clicks to work"/>
+                </tooltip>
                 <items>
                     <FXCollections fx:factory="observableArrayList">
-                        <String fx:value="Asparagus"/>
-                        <String fx:value="Beans"/>
-                        <String fx:value="Broccoli"/>
-                        <String fx:value="Cabbage"/>
-                        <String fx:value="Carrot"/>
-                        <String fx:value="Celery"/>
-                        <String fx:value="Cucumber"/>
-                        <String fx:value="Leek"/>
-                        <String fx:value="Mushroom"/>
-                        <String fx:value="Pepper"/>
-                        <String fx:value="Radish"/>
-                        <String fx:value="Shallot"/>
-                        <String fx:value="Spinach"/>
-                        <String fx:value="Swede"/>
-                        <String fx:value="Turnip"/>
+                        <String fx:value="Asparagus" />
+                        <String fx:value="Beans" />
+                        <String fx:value="Broccoli" />
+                        <String fx:value="Cabbage" />
+                        <String fx:value="Carrot" />
+                        <String fx:value="Celery" />
+                        <String fx:value="Cucumber" />
+                        <String fx:value="Leek" />
+                        <String fx:value="Mushroom" />
+                        <String fx:value="Pepper" />
+                        <String fx:value="Radish" />
+                        <String fx:value="Shallot" />
+                        <String fx:value="Spinach" />
+                        <String fx:value="Swede" />
+                        <String fx:value="Turnip" />
                     </FXCollections>
                 </items>
+                -->
             </ListView>
         </FlowPane>
     </center>
+
     <bottom>
-        <VBox>
-            <Button fx:id="switchButton" text="Switch" onAction="#handleSwitchButtonAction"/>
-            <Button fx:id="okButton" text="OK" onAction="#handleOkButton"/>
+        <VBox maxWidth="400">
+            <TextField fx:id="addition" maxWidth="200"/>
+            <Button onAction="#addThing" text="Add" />
+        <HBox alignment="CENTER">
+
+            <Button onAction="#handleSwitchButtonAction" text="Switch" />
+            <Button onAction="#handleOkButton" text="OK" />
+        </HBox>
         </VBox>
     </bottom>
-
-
 </BorderPane>

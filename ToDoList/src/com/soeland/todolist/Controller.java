@@ -20,12 +20,10 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
-import java.util.List;
 import java.util.Optional;
 
 public class Controller {
 
-    private List<TodoItem> todoItems;
     @FXML
     private ListView<TodoItem> todoListView;
     @FXML
@@ -38,6 +36,7 @@ public class Controller {
     private ContextMenu listContextMenu;
     @FXML
     private ToggleButton filterToggleButton;
+
 
     public void initialize() {
 //        TodoItem item1 = new TodoItem("Mail birthday card", "Buy a 30th birthday card for john",
@@ -133,6 +132,7 @@ public class Controller {
         });
     }
 
+
     @FXML
     public void showNewItemDialog() {
         Dialog<ButtonType> dialog = new Dialog<>();
@@ -164,7 +164,6 @@ public class Controller {
         }
 
     }
-
     @FXML
     public void handleKeyPressed(KeyEvent keyEvent) {
         TodoItem selectedItem = todoListView.getSelectionModel().getSelectedItem();
@@ -174,7 +173,6 @@ public class Controller {
             }
         }
     }
-
     @FXML
     public void handleClickListView() {
         TodoItem item = todoListView.getSelectionModel().getSelectedItem();
@@ -188,7 +186,6 @@ public class Controller {
 //        itemDetailsTextArea.setText(sb.toString());
 
     }
-
     @FXML
     public void deleteItem(TodoItem item) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -201,7 +198,6 @@ public class Controller {
             TodoData.getInstance().deleteTodoItem(item);
         }
     }
-
     @FXML
     public void handleFilterButton() {
         if (filterToggleButton.isSelected()) {

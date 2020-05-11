@@ -18,6 +18,7 @@ public class DialogController {
     @FXML
     private DatePicker deadlinePicker;
 
+
     public TodoItem processResults() {
         String shortDescription = shortDescriptionField.getText().trim();
         String details = detailsArea.getText().trim();

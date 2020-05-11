@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.AddNew"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <Label text="First Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="firstName" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <Label text="Middle Name:" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    <TextField fx:id="middleName" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Label text="Last Name:" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+    <TextField fx:id="lastName" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+    <Label text="Phone Number:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="phoneNumber" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <Label text="Street 1:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <TextField fx:id="street1" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <Label text="Street 2:" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+    <TextField fx:id="street2" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+    <Label text="City:" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+    <TextField fx:id="city" GridPane.rowIndex="5" GridPane.columnIndex="2"/>
+    <Label text="State:" GridPane.rowIndex="4" GridPane.columnIndex="3"/>
+    <TextField fx:id="state" GridPane.rowIndex="5" GridPane.columnIndex="3"/>
+    <Label text="Zip Code:" GridPane.rowIndex="4" GridPane.columnIndex="4"/>
+    <TextField fx:id="zip" GridPane.rowIndex="5" GridPane.columnIndex="4"/>
+    <Label text="Photo Upload:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+    <Button text="Choose Photo" onAction="#fileChooser" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+    <TextField fx:id="picturePath" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+    <Label text="Note(s):" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
+    <TextField fx:id="note" GridPane.rowIndex="9" GridPane.columnIndex="0"/>
+
+</GridPane>

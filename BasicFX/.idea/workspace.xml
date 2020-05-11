@@ -52,6 +52,13 @@
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
@@ -78,6 +85,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GitHub\JavaClass\BasicFX\src\sample\pics" />
+      <recent name="E:\GitHub\JavaClass\BasicFX\src\sample" />
+      <recent name="E:\GitHub\JavaClass\BasicFX\pics" />
+      <recent name="E:\GitHub\JavaClass\BasicFX\src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

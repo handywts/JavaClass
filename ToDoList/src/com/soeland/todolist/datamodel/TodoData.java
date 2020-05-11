@@ -37,9 +37,6 @@ public class TodoData {
         todoItems.add(item);
     }
 
-//    public void setTodoItems(List<TodoItem> todoItems) {
-//        this.todoItems = todoItems;
-//    }
 
     public void loadTodoItems() throws IOException {
         todoItems = FXCollections.observableArrayList();
